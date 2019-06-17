@@ -212,8 +212,8 @@ ibm-websphere-liberty:
 
   ingress:
     enabled: true
-    rewriteTarget: "/"
-    path: "/customer"
+    rewriteTarget: "/$2"
+    path: "/customer(/|$)(.*)"
     host: ""
     secretName: ""
     annotations: {}
